@@ -9,11 +9,15 @@ import java.util.stream.Collectors;
 
 public class BasicUtilizer implements Utilizer {
 
+    private final int populationSize;
+
+    public BasicUtilizer(int populationSize) {
+        this.populationSize = populationSize;
+    }
+
     @Override
     public List<Mutant> utilize(List<Mutant> population) {
-        double survivalPercentage = Dice.INSTANCE.rollForSurvival();
-        int newPopulationSize = (int) (population.size() * survivalPercentage);
-        return population.stream().sorted(Comparator.reverseOrder()).limit(newPopulationSize).collect(Collectors.toCollection(ArrayList::new));
+        return population.stream().sorted(Comparator.reverseOrder()).limit(populationSize).collect(Collectors.toCollection(ArrayList::new));
     }
 
 }

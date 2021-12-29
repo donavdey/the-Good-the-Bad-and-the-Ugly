@@ -4,15 +4,15 @@ public class SimulationParameters {
     private final int rewardUnit;
     private final int reproductionNumber;
     private final float mutationFactor;
-    private final int initialPopulationSize;
+    private final int populationSize;
     private final int interactionsNumber;
 
-    public SimulationParameters(int rewardUnit, int reproductionFactor, float mutationFactor, int initialPopulationSize,
+    public SimulationParameters(int rewardUnit, int reproductionFactor, float mutationFactor, int populationSize,
                                 int interactionsNumber) {
         this.rewardUnit = rewardUnit;
         this.reproductionNumber = reproductionFactor;
         this.mutationFactor = mutationFactor;
-        this.initialPopulationSize = initialPopulationSize;
+        this.populationSize = populationSize;
         this.interactionsNumber = interactionsNumber;
     }
 
@@ -28,8 +28,8 @@ public class SimulationParameters {
         return mutationFactor;
     }
 
-    public int getInitialPopulationSize() {
-        return initialPopulationSize;
+    public int getPopulationSize() {
+        return populationSize;
     }
 
     public int getInteractionsNumber() {

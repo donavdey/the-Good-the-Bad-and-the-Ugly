@@ -44,6 +44,8 @@ public class BasicSimulation implements Simulation {
         // utilize
         this.population = this.utilizer.utilize(this.population);
         int populationSizeAfterUtilization = this.population.size();
+
+        // reproduce
         for (int i = 0; i < populationSizeAfterUtilization; i++) {
             this.population.addAll(this.replicator.replicate(this.population.get(i)));
         }

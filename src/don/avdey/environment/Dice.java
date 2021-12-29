@@ -21,10 +21,6 @@ public class Dice {
         return RANDOM.nextFloat();
     }
 
-    public double rollForSurvival() {
-        return 0.35;
-    }
-
     public Set<Integer> rollForIndices(int size, int max, int exclude) {
         Set<Integer> indices = new HashSet<>(size);
         while (indices.size() != size) {

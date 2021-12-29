@@ -11,7 +11,7 @@ Let's say we have a population of mutants and let's assume following:
 6. When an `ugly` mutant encounters `good` mutant, it acts as a `good` mutant. When an `ugly` mutant encounters a `bad` mutant, it acts as a `bad` mutant;
 7. When two `ugly` mutants encounter one another, they do nothing;
 8. When one mutant beats another, the winner mutant accumulates its reward by `REWARD UNIT` and decreases accumulated reward by `REWARD UNIT` of the beaten mutant;  
-9. In the end of each iteration a die is rolled and thus the percentage of surviving mutants is determined. Only mutants with the highest accumulated reward survive;   
+9. In the end of each iteration all mutants are utilized so that only `POPULATION SIZE` mutants with most accummulated reward remain. 
 10. After that, each mutant reproduces in `REPRODUCTION NUMBER` of new mutants, which mutate their traits with a factor of `MUTATION FACTOR`.
 
 I expect following to be true:  
@@ -19,7 +19,7 @@ I expect following to be true:
 2. `ugly` mutants will not disappear and will be the least represented variant in the population most of the time. 
 
 Simulation parameters derived from the rules:  
-`INTERACTIONS NUMBER`, `REWARD UNIT`, `REPRODUCTION NUMBER`, `MUTATION FACTOR`.
+`POPULATION SIZE`, `INTERACTIONS NUMBER`, `REWARD UNIT`, `REPRODUCTION NUMBER`, `MUTATION FACTOR`.
 
 ## Simulation
 

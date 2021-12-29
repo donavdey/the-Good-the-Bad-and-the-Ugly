@@ -13,6 +13,6 @@ public class Main {
         SimulationFactory simulationFactory = new BasicSimulationFactory();
         Simulation simulation = simulationFactory.create(simulationParameters);
 
-        simulation.simulate(100);
+        simulation.simulate(1000);
     }
 }
