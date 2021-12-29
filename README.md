@@ -6,7 +6,7 @@ Let's say we have a population of mutants and let's assume following:
 2. Let's call the mutant with two or more equal traits `mimic`. Such mutant can choose any of such equal traits to be dominant based on the situation;
 3. Mutants interact with each other. Each mutant can interact with only given `Interaction Number` number of other mutants;
 4. `good` mutant beats `bad` mutant, `bad` mutant beats `ugly` mutant, `ugly` mutant beats `good` mutant;
-5. When one mutant beats another, it accumulates its reword by `REWARD UNIT` and decreases accumulated reword by `REWARD UNIT` of the beaten mutant;
+5. When one mutant beats another, it accumulates its reward by `REWARD UNIT` and decreases accumulated reward by `REWARD UNIT` of the beaten mutant;
 6. When two `good` mutants encounter one another, they do not fight and accumulate `REWARD UNIT` / 2;  
 7. When two `bad` mutants encounter one another, they fight and the mutant with higher `badness` trait wins;  
 8. When two `ugly` mutants encounter one another, they do not fight and decrease accumulated `REWARD UNIT` / 2;  
